@@ -7,10 +7,9 @@
 }
 
 html, body {
-    background: black top center no-repeat ;
-    background-size: cover;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 body {
@@ -26,33 +25,42 @@ main {
 
 section#celular {
     background: url("../imagens/frame-iphone.png") no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
     position: absolute;
     left: 50%; top: 50%; transform: translate(-50%, -50%);
     width: 311px;
-    height: 627px;
+    height: 617px;
 }
 
 iframe#tela {
     position: relative;
-    top: 80px; left: 20px;
-    width: 269px;
-    height: 471px;
-}
-
-section#redesSociais {
-    position: relative;
-    top: 50%; left: 5%;
-    transform: translate(-0%, -50% );
+    top: 79px; left: 22px;
+    height: 463px;
+    width: 262px;
+    background-size: cover;
+    background-color: black;
 }
 
 section#redesSociais img {
     width: 50px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 50%;
-    box-sizing: border-box;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    box-sizing: border-box;
 }
 
 section#redesSociais img:hover {
-    border: 3px solid white;
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.500);
+    border: 2px solid rgba(255, 255, 255, 0.788);
+    transition: transform .2s; transition: border .2s;
 }
+
+section#redesSociais {
+    position: relative;
+    text-align: right;
+    top: 25%;
+}
+
+
